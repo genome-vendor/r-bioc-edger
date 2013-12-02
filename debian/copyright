@@ -1,0 +1,27 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://www.bioconductor.org/packages/release/bioc/src/contrib/edgeR_3.4.0.tar.gz
+Comment: inst/doc/edgeRUsersGuide.pdf is not accompanied by its source.
+License: GPL-2
+ edgeR is GPL-2+, but depend on LIMMA (LGPL-2+) and R (GPL-2), so its effective license
+ is GPL-2.
+Files-Excluded: inst/doc/edgeRUsersGuide.pdf
+
+Files: *
+Copyright: 2007-2013 Mark Robinson <mrobinson@wehi.edu.au>, Davis McCarthy <dmccarthy@wehi.edu.au>, Gordon Smyth <smyth@wehi.edu.au>
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+Comment: On Debian systems, a copy of the GNU General Public version 2
+ is available in ‘/usr/share/common-licenses/GPL-2’.
+

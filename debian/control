@@ -1,0 +1,22 @@
+Source: r-bioc-edger
+Section: gnu-r
+Priority: extra
+Maintainer: Apipe Tester <genome-dev@genome.wustl.edu>
+Build-Depends: debhelper (>= 7),
+               cdbs,
+               r-base-dev,
+               r-bioc-limma
+Standards-Version: 3.8.3
+Homepage: http://www.bioconductor.org/packages/release/bioc/html/edgeR.html
+
+Package: r-bioc-edger
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${R:Depends}
+Suggests: r-cran-mass
+Description: Empirical analysis of digital gene expression data in R
+ Bioconductor package for differential expression analysis of whole
+ transcriptome sequencing (RNA-seq) and digital gene expression
+ profiles with biological replication. It uses empirical Bayes
+ estimation and exact tests based on the negative binomial
+ distribution. It is also useful for differential signal analysis with
+ other types of genome-scale count data.
