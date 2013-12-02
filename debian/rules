@@ -4,10 +4,10 @@ export DH_VERBOSE=1
 
 debRreposname = bioc
 
+DEB_DH_BUILDDEB_ARGS = -- -Z xz
+
 include /usr/share/R/debian/r-cran.mk
 
-DEB_INSTALL_CHANGELOGS_ALL = inst/doc/changelog.txt
-
 install/$(package)::
-	chmod 644 debian/$(package)/usr/lib/R/site-library/$(cranName)/CITATION
-	chmod 644 debian/$(package)/usr/lib/R/site-library/$(cranName)/doc/*
+	chmod 644 debian/$(package)/usr/lib/R/site-library/edgeR/doc/*
+
