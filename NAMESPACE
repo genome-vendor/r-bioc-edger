@@ -1,0 +1,34 @@
+#  Calling the dynamic library.
+useDynLib(edgeR)
+
+#  All functions exported other than those starting with "."
+exportPattern("^[^\\.]")
+
+exportClasses("DGEList","DGEExact","DGEGLM","DGELRT","TopTags")
+exportMethods("show")
+
+import(limma)
+
+S3method(as.matrix,DGEList)
+S3method(dim,DGEList)
+S3method(dim,DGEExact)
+S3method(dim,DGEGLM)
+S3method(dim,DGELRT)
+S3method(dim,TopTags)
+S3method(dimnames,DGEList)
+S3method(dimnames,DGEExact)
+S3method(dimnames,DGEGLM)
+S3method(dimnames,DGELRT)
+S3method(dimnames,TopTags)
+S3method("dimnames<-",DGEList)
+S3method("dimnames<-",DGEGLM)
+S3method(length,DGEList)
+S3method(length,DGEExact)
+S3method(length,TopTags)
+S3method(length,DGEGLM)
+S3method(length,DGELRT)
+S3method(plotMDS,DGEList)
+S3method(as.data.frame,TopTags)
+S3method(roast,DGEList)
+S3method(mroast,DGEList)
+S3method(camera,DGEList)
